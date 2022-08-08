@@ -1,0 +1,46 @@
+Feature('FirstLogin');
+
+Scenario('test something', ({ I }) => {
+    I.login();
+    I.seeElement('//p[@class="link-text"]');
+    I.wait(2);
+    I.click('//a[@href="/butik/liste/10/saat--aksesuar"]');
+    I.wait(2);
+    I.click('//i[@class="i-arrow-right"]');
+    I.wait(2);
+    I.click('//a[@href="https://www.trendyol.com/daniel-klein-x-b306"]');
+    pause();
+    I.wait(2);
+    I.click('//a[@href="/daniel-klein/erkek-kol-saati-ve-kartlik-legend-series-p-290735998"]');
+    I.wait(2);
+    I.switchToNextTab(1);
+    I.wait(2);
+    I.click('//a[@href="/daniel-klein/orijinal-yeni-sezon-erkek-celik-saat-bileklik-hediyeli-p-289787732"]');
+    I.wait(2);
+    I.click('//button[@class="add-to-basket"]');
+    I.wait(2);
+    I.click('//div[@class="account-nav-item basket-preview"]');
+    I.wait(2);
+    I.click('//i[@class="i-trash"]');
+    I.wait(2);
+    I.click('//button[@class="ty-font-w-semi-bold ty-button ty-bordered ty-transition ty-input-medium ty-notr"][contains(text(),"Sil")]');
+    I.click('//a[@id="logo"]');
+    I.click('//a[@href="/butik/liste/10/saat--aksesuar"]');
+    I.wait(2);
+    I.click('//i[@class="i-arrow-right"]');
+    I.wait(2);
+    I.click('//a[@href="https://www.trendyol.com/casio-x-b254"]');
+    I.wait(2);
+    I.click('//a[@href="/casio/retro-unisex-kol-saati-a159wa-n1df-p-893682"]');
+    I.wait(2);
+    I.switchToNextTab(1);
+    I.wait(2);
+    I.click('//button[@class="add-to-basket"]');
+    I.wait(2);
+    I.click('//div[@class="account-nav-item basket-preview"]');
+    I.wait(2);
+    I.click('//a[@class="ty-link-btn-primary"]');
+    I.wait(2);
+    I.click('//button[@class="ty-primary-btn ty-btn-large"][contains(text(),"Kaydet ve Devam Et")]');
+
+});
